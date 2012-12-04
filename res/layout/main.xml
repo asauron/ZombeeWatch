@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/meDroidImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zombeewatch" />
+
+	<TableLayout android:layout_height="wrap_content"
+		android:stretchColumns="*" android:layout_width="match_parent"
+		android:padding="3dp" android:id="@+id/tableLayout1">
+		<TableRow android:id="@+id/tableRow1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:id="@+id/aboutLayout"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:orientation="vertical">
+				<ImageView android:id="@+id/aboutImageView"
+					android:layout_gravity="center" android:layout_height="wrap_content"
+					android:onClick="aboutMe"
+					android:layout_width="fill_parent" android:src="@drawable/about"></ImageView>
+				<TextView android:text="Tutorial" android:id="@+id/aboutMeTextView"
+					android:layout_gravity="center" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="22dp">
+				</TextView>
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/locationLayout"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:orientation="vertical">
+				<ImageView android:id="@+id/locationImageView"
+					android:layout_gravity="center" android:layout_height="wrap_content"
+					android:onClick="showLocation"
+					android:layout_width="fill_parent" android:src="@drawable/location"></ImageView>
+				<TextView android:text="Infested areas" android:id="@+id/locationTextView"
+					android:layout_gravity="center" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textSize="22dp">
+				</TextView>
+			</LinearLayout>
+		</TableRow>
+
+		<TableRow android:id="@+id/tableRow2" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout android:id="@+id/twitterLayout"
+				android:layout_height="wrap_content" android:layout_width="match_parent"
+				android:orientation="vertical">
+			</LinearLayout>
+
+		</TableRow>
+	</TableLayout>
+
+	<ImageView
+	    android:id="@+id/twitterImageView"
+	    android:layout_width="84dp"
+	    android:layout_height="80dp"
+	    android:onClick="showTweets"
+	    android:src="@drawable/beepic" />
+
+	<TextView
+	    android:id="@+id/twitterTextView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Take pictures"
+	    android:textSize="22dp" />
+
+</LinearLayout>

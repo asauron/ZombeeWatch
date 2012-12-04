@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zombee Watch</string>
+    <string name="twitter_user_name">linustorvalds</string>    
+    <string name="full_name">ZombeeWatch.org</string>
+    <string name="short_bio">The Zombee Bee</string>
+</resources>
